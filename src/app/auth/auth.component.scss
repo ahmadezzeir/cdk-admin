@@ -4,9 +4,10 @@
     $accent: map-get($theme, accent);
     $warn: map-get($theme, warn);
 
-    
+
     .sidenav,.drawer{
-        background: mat-color($primary,400);    
+       background: mat-color($primary,50);
+
         overflow: hidden;
         position: relative;
     }
@@ -19,5 +20,10 @@
     .spacer {
         width: 100%;
     }
+    .mat-line , .ng-star-inserted {
+      color: mat-color($foreground, icon);
+    }
+
+
 }
 
