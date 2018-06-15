@@ -45,7 +45,9 @@ $cdk-theme:   mat-light-theme(
   $primary-app-warn);
 
 $foreground: map-get($cdk-theme, foreground);
-$icon-color: map-get($cdk-theme, icon-color);
+
+
+
 //$icon-color: map-get($cdk-theme, icon-color);
 
 
@@ -127,6 +129,7 @@ body{
     animation-fill-mode: forwards;
     animation-fill-mode: forwards;
 }
+
 
 @keyframes cssAnimation {
     to {

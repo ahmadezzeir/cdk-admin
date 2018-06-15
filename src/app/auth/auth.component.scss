@@ -24,6 +24,20 @@
       color: mat-color($foreground, icon);
     }
 
+    md-icon {
+      color: mat-color($foreground, icon);
+    }
+
+    cdk-sidemenu .mat-list .mat-list-item, cdk-sidemenu .mat-nav-list .mat-list-item, cdk-sidemenu .mat-selection-list .mat-list-item {
+      color: #0288D1;
+    }
+
+    mat-nav-list cdk-sidemenu-item .secondaryMenu {
+     background-color:  #2c2f32;
+
+    }
+
+
 
 }
 
