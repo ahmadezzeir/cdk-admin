@@ -1,3 +1,4 @@
+import { environment } from './../../../environments/environment';
 import { Component, OnInit, Input } from '@angular/core';
 import { ToolbarHelpers } from './toolbar.helpers';
 
@@ -7,17 +8,21 @@ import { ToolbarHelpers } from './toolbar.helpers';
   styleUrls: ['./toolbar.component.scss']
 })
 export class ToolbarComponent implements OnInit {
-	
+
   @Input() sidenav;
 	@Input() sidebar;
 	@Input() drawer;
 	@Input() matDrawerShow;
-  
+
 	searchOpen: boolean = false;
     toolbarHelpers = ToolbarHelpers;
   	constructor() { }
 
   	ngOnInit() {
-  	}
+    }
+
+    enableSearch = environment.appFeatures.searchEnabled;
+    notificationsEnabled = environment.appFeatures.notificationsEnabled;
+    rightMenuEnabled = environment.appFeatures.rightMenuEnabled;
 
 }

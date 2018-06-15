@@ -5,6 +5,11 @@
 
 export const environment = {
   production: false,
+  appFeatures: {
+    searchEnabled: false,
+    notificationsEnabled: false,
+    rightMenuEnabled: false
+  },
   firebase: {
     apiKey: 'AIzaSyBwlk0KMM75nBsZ8L7j9cZ5N5x0fwqfBjg',
     authDomain: 'newproject-5d731.firebaseapp.com',
@@ -13,7 +18,8 @@ export const environment = {
     storageBucket: 'newproject-5d731.appspot.com',
     messagingSenderId: '737689833575'
   },
-  mailApi: '/assets/list.json'
+  mailApi: '/assets/list.json',
+
 };
 export const palete = {
     primary: '#D32F2F',
@@ -27,5 +33,7 @@ export const palete = {
     secondaryLight: '#E91E63',
     tertiaryLight: '#9C27B0',
     quaternaryLight: '#673AB7',
-    quinaryLight: '#3F51B5'       
+    quinaryLight: '#3F51B5'
 }
+
+
