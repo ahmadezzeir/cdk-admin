@@ -24,7 +24,7 @@ import { MatProgressSpinnerModule,
 
          MatSelectModule,
 
-         
+
 
 
          MatProgressBarModule,
@@ -120,13 +120,13 @@ export function highlightJsFactory(): any {
     InputComponent,
     RadioComponent,
     SelectComponent,
-    
+
 
 
     ],
 
   exports: [
     ]
-      
+
 })
 export class MaterialWidgetsModule { }

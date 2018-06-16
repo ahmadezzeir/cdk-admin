@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { AuthComponent } from './auth.component';
+
 import { RouterModule, Routes } from '@angular/router';
 
 import { MatToolbarModule } from '@angular/material/toolbar';
@@ -21,7 +22,8 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
 
 import { CoreModule } from '../core/core.module';
 
-export const appRoutes: Routes = [{ 
+
+export const appRoutes: Routes = [{
       path:'',component: AuthComponent, children: [
         {path: 'dashboard', loadChildren: '../dashboard-crm/dashboard-crm.module#DashboardCrmModule'},
         {path: 'dashboard-account', loadChildren: '../dashboard-accounts/dashboard-accounts.module#DashboardAccountsModule'},
@@ -36,6 +38,7 @@ export const appRoutes: Routes = [{
         {path: 'guarded-routes',loadChildren:'../guarded-routes/guarded-routes.module#GuardedRoutesModule'},
         {path: 'editor', loadChildren: '../editor/editor.module#EditorModule'},
         {path: 'scrumboard', loadChildren: '../scrumboard/scrumboard.module#ScrumboardModule'},
+        {path: 'custom', loadChildren: '../custom/custom.module#CustomModule'},
 
       ]}
   ]
@@ -50,10 +53,10 @@ export const appRoutes: Routes = [{
     MatTabsModule,
     CoreModule,
     MatSidenavModule,
-    PerfectScrollbarModule,
+    PerfectScrollbarModule
     // Ng2PageTransitionModule
   ],
-  declarations: [AuthComponent], 
+  declarations: [AuthComponent],
   providers: [
     {
       provide: PERFECT_SCROLLBAR_CONFIG,
