@@ -8,7 +8,7 @@ const routes: Routes = [
     {path: 'auth', loadChildren: '../auth/auth.module#AuthModule'},
     {path: 'register', loadChildren: '../register/register.module#RegisterModule'},
     {path: 'login', loadChildren: '../pages/login/login.module#LoginModule'},
-    //  {path: 'custom', loadChildren: '../custom/custom.module#CustomModule'},
+    //{path: 'custom', loadChildren: '../custom/custom.module#CustomModule'},
 
     {path: '**', redirectTo: 'auth/dashboard'},
 ]
