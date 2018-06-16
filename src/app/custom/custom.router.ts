@@ -6,10 +6,11 @@ import { Custom2Component } from './custom2/custom2.component';
 
 const customRoutes: Routes = [
   { path: '', component:  WelcomeComponent , children: [
-  { path: 'Custom1', component:  Custom1Component },
-  { path: 'Custom2', component:  Custom2Component }
+  { path: 'Custom1', component:  Custom1Component, data: { animation: 'Custom1' }  },
+  { path: 'Custom2', component:  Custom2Component, data: { animation: 'Custom2' }  }
 ]
-  };
+  }
+];
 
 @NgModule({
   imports: [

@@ -1,24 +1,24 @@
 export const menus = [
   {
-    name: "custom",
+    name: "Custom",
     icon: "accessibility",
     link: false,
     open: false,
     chip: { value: 0, color: "accent" },
     sub: [
       {
-        name: "Custom 1",
+        name: "List",
         link: "custom/Custom1",
-        icon: "android",
+        icon: "list",
         chip: false,
-        open: true
+        open: false
       },
       {
         name: "Custom 1",
         link: "custom/Custom2",
         icon: "change_history",
-        chip: false,
-        open: true
+        //chip: false,
+        open: false
       }
     ]
   },
